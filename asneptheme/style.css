@@ -1,0 +1,1210 @@
+/*
+Theme Name: Šablona ASNEP
+Theme URI: http://www.asnep.cz
+Author: Lukáš Tomek
+Author URI: http://www.asnep.cz
+Description: Šablona designovaná pro web www.asnep.cz. Moderní, přehledná, originální. 
+Version: 1.0
+License: © 2011 Lukáš Tomek. Všechna práva vyhrazena.
+License URI: licence.txt
+Tags: Dvousloupcový layout, podporuje prohlížeče MF, Ch, IE 7, IE 8, IE 9 
+*/
+
+/* Styles designed on MF 8 on Windows, other browsers hacked */
+
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ZAKLADNI JEDNOTLIVE STYLY */
+
+h2 {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #005a57;
+ text-decoration: underline;
+}
+
+h3 {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #3c89c4;
+}
+
+p {
+ font-family: Verdana;
+ font-size: 13px;
+}
+
+strong, b {
+ font-weight: bold;
+}
+
+em, i {
+ font-style:italic;
+}
+
+/* HLAVNI STYLY */
+
+body {
+ background: #00a49e;
+}
+
+#wrap {
+ width: 954px;
+ margin: auto;
+}
+
+#header h1 {
+ background: url(img/logo_h.png) no-repeat;
+ width: 526px;
+ height: 117px;
+ text-indent: -9999px;
+ float: left;
+}
+
+#header h1 a {
+ width: 526px;
+ height: 117px;
+ display: block;
+}
+
+/* Navigace - stranky */
+
+#header ul {
+padding-top:10px;
+margin: 0px 7px 0 0;
+float:right;
+}
+
+#header ul li.stranka_prvni {
+float:left;
+padding: 0px 6px 10px 0px;
+display: inline;
+background: url("img/rozdelovnik_stranky.png") no-repeat right 2px;
+}
+
+#header ul li.page_item {
+float:left;
+padding: 0px 6px 10px 6px;
+display: inline;
+background: url("img/rozdelovnik_stranky.png") no-repeat right 2px;
+}
+
+#header ul li.stranka_posledni {
+float:left;
+padding: 0px 0px 0px 6px;
+display: inline;
+background: none;
+}
+
+#header ul li a { 
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: normal;
+ color: #ffffff;
+ text-decoration:none;
+}
+
+#header ul li a:hover {
+ text-decoration:underline;
+}
+
+/* Formular hledani */
+
+#searchform {
+ clear:right;
+ margin: 10px 7px 0 0;
+}
+
+#searchform #searchbutton {
+ cursor: pointer;
+ width:25px;
+ height:28px;
+ text-indent: -9999px;
+ background: url("img/ikona_lupa.png") no-repeat left top;
+ border: none;	
+}
+
+
+#searchform div {
+ margin: 2px 0px 0px 0px;
+ float:right;
+ background: url("img/form_hledat.png") no-repeat scroll right 0 transparent;	
+}
+
+#searchform #searchwindow {
+ background: none repeat scroll 0 0 transparent;
+ border: 0 none;
+ width:173px;
+ margin: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 0px;
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: bold;
+ color: #b0b0b0;
+ left: 0;
+ position: relative;
+ top: -2px;
+}
+
+/* Navigace - menu */
+
+#menu {
+clear:both;
+background: url("img/backg_menu.png") no-repeat top left;
+width: 954px;
+height: 31px;
+}
+
+#menu ul {
+ position:relative;
+ top: 10px;
+ left: 7px;
+ padding: 0px 0px 0px 0px;
+}
+
+#menu ul li a {
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: normal;
+ color: #003d3b;
+ text-decoration:none;
+ text-shadow: 1px 1px #ffffff;
+}
+
+#menu ul li a:hover {
+ color: #ffffff;
+ text-shadow: 1px 1px #003d3b;
+}
+
+#menu ul li.menu-item_prvni {
+ float:left;
+ padding: 0px 8px 10px 12px;
+ display: inline;
+ background: url("img/rozdelovnik_menu.png") no-repeat right -3px;
+}
+
+#menu ul li.cat-item {
+ float:left;
+ padding: 0px 7px 10px 6px;
+ display: inline;
+ background: url("img/rozdelovnik_menu.png") no-repeat right -3px;
+}
+
+#menu ul li.menu-item_posledni {
+ float:left;
+ padding: 0px 0px 0px 6px;
+ display: inline;
+ background: none;
+}
+
+/* Navigace - submenu */
+
+#menu {
+ clear:both;
+ background: url("img/backg_submenu-nahore.png") no-repeat top left;
+ width: 954px;
+ height: 37px;
+}
+
+#submenu {
+ clear:both;
+ background: url("img/backg_submenu-stred.png") no-repeat top left;
+ width: 954px;
+ height: 17px;
+}
+
+#submenu ul {
+ position:relative;
+ top: -4px;
+ left: 0px; 
+ padding: 0px 0px 0px 17px;
+}
+
+#submenu ul li a {
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: bold;
+ color: #ffffff;
+ text-decoration:none;
+}
+
+#submenu ul li a:hover {
+ text-decoration:underline;
+}
+
+#submenu ul li.menu-item_prvni {
+ float:left;
+ padding: 0px 8px 0px 0px;
+ display: inline;
+ background: url("img/rozdelovnik_submenu.png") no-repeat right 3px;
+}
+
+#submenu ul li.cat-item {
+ float:left;
+ padding: 0px 8px 0px 6px;
+ display: inline;
+ background: url("img/rozdelovnik_submenu.png") no-repeat right 3px;
+}
+
+#submenu ul li.menu-item_posledni {
+float:left;
+padding: 0px 0px 0px 6px;
+display: inline;
+background: none;
+}
+
+#submenu ul li.current-menu {
+ color: #ffffff;	
+ text-decoration: underline;
+}
+
+/* Navigace - current */
+
+#menu ul li.current-menu {
+ padding: 3px 7px 10px 6px;
+ margin: 0px 0px 0px 0px;
+ position:relative;
+ top: -3px;
+ left: -1px;
+ background: #5da6ca url("img/rozdelovnik_menu.png") no-repeat right 1px;
+}
+
+#menu ul li.current-menu a {
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: normal;
+ color: #ffffff;
+ text-decoration:none;
+ text-shadow: 1px 1px #003d3b;
+}
+
+#menu ul li.current-menu_prvni {
+ padding: 3px 8px 10px 12px;
+ margin: 0px 0px 0px 0px;
+ position:relative;
+ top: -3px;
+ left: 0px;
+ background: url("img/rozdelovnik_menu.png") no-repeat right 1px, url("img/current-menu_prvni.png") no-repeat 0px 0px;
+ background-color: #5da6ca;
+}
+
+#menu ul li.current-menu_prvni a {
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: normal;
+ color: #ffffff;
+ text-decoration:none;
+ text-shadow: 1px 1px #003d3b;
+}
+
+#menu ul li.current-menu_posledni {
+ padding: 3px 18px 10px 6px;
+ margin: 0px 0px 0px 0px;
+ position:relative;
+ top: -3px;
+ left: -1px;
+ background: url("img/current-menu_posledni.png") no-repeat top right;
+ background-color: #5da6ca;
+}
+
+#menu ul li.current-menu_posledni a {
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: normal;
+ color: #ffffff;
+ text-decoration:none;
+ text-shadow: 1px 1px #003d3b;
+}
+
+#header ul li.current-stranka {
+ text-decoration: underline;
+}
+
+/* Stranka - levy sloupec */
+
+#main {
+ clear:both; 
+}
+
+#menu_stin {
+ background: url("img/backg_stranka-nahore.png") no-repeat top left;
+ width: 954px;
+ height: 7px;
+
+}
+
+#main #wrap_sloupcu { 
+ float:left;
+ background: url("img/backg_stranka-stred.png") repeat-y top left;
+}
+
+#levy_sloupec {
+ float:left;
+ width: 602px;
+ padding: 6px 0px 15px 0px;
+}
+
+#levy_sloupec h3 {
+ margin: 10px 20px 0px 25px;
+ padding: 0px 0px 0px 0px;
+}
+
+#levy_sloupec div.clanek {
+ margin: 10px 20px 0px 25px;
+ padding: 0px 0px 0px 0px;
+}
+
+#single_po_excerptu {
+ clear: left;
+ padding: 10px 0 0 0;
+} 
+
+#single_po_excerptu img.aligncenter {
+    display: block;
+    margin: 20px auto 20px auto;
+} 
+
+#single_po_excerptu img.alignleft {
+    float: left;
+    margin: 20px 20px 20px 0px;
+} 
+
+#levy_sloupec div.clanek h2 {
+ line-height:130%;
+ text-decoration: none;
+}
+
+#levy_sloupec div.clanek h3 {
+ font-family: Verdana;	
+ color: #000000;
+ font-size: 14px;
+ margin: 15px 0px 10px 0px;
+ padding: 0px 0px 0px 0px;
+}
+
+#levy_sloupec div.clanek table {
+ line-height:130%;
+ text-decoration: none;
+ font-family: Verdana;
+ text-shadow: none;
+ color: #000000;
+ font-size: 13px;
+ font-weight: normal;
+ border-width: 0px;
+ border-spacing: 0px;
+ border-style: none;
+ border-color: gray;
+ border-collapse: collapse;
+ margin: 15px 0px 15px 0px;
+}
+
+#levy_sloupec div.clanek th {
+ border-width: 1px;
+ padding: 1px;
+ border-style: inset;
+ border-color: gray;
+}
+
+#levy_sloupec div.clanek td {
+ border-width: 1px;
+ padding: 1px;
+ border-style: inset;
+ border-color: gray;
+}
+
+#levy_sloupec div.clanek ul {
+ font-family: Verdana;
+ font-size: 13px;
+ font-weight: normal;
+ line-height:130%;
+ margin: 0px 0px 7px 15px;
+ list-style-position: outside;
+}
+
+#levy_sloupec div.clanek li {
+ list-style-type: disc;
+ margin: 0 0 5px 0;
+}
+
+#levy_sloupec div.clanek a {
+ color: #1b8ce2;
+}
+
+#levy_sloupec div.clanek a:hover {
+ color: #0c7b8b;
+}
+
+#levy_sloupec div.clanek a:visited {
+ color: #0c7b8b;
+}
+
+
+#levy_sloupec div.clanek h2 a {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #005a57;
+ text-decoration: underline;
+}
+
+#levy_sloupec div.clanek h2 a:hover {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #1b81d0;
+ text-decoration: underline;
+}
+
+#levy_sloupec div.clanek p.clanek-prilohy-datum {
+ font-family: Verdana;
+ font-size: 13px;
+ font-weight: normal;
+ color: #00a49e;
+ margin: 4px 0px 5px 0px;
+}
+
+#levy_sloupec div.clanek p.post {
+ line-height:130%;
+ margin: 0px 0px 7px 0px;
+}
+
+#levy_sloupec div.page-clanek p.post {
+ text-indent:0px;
+}
+
+#levy_sloupec div.clanek img.ikona_post {
+ float: left;
+ margin: 0px 10px 0px 0px;
+}
+
+#levy_sloupec div.clanek a.clanek-otevrit {
+ font-family: Verdana;
+ font-size: 13px;
+ font-weight: bold;
+ color: #00a49e;
+ margin: 0px 0px 0px 0px;
+}
+
+#levy_sloupec div.clanek a.clanek-otevrit:hover {
+ font-family: Verdana;
+ font-size: 13px;
+ font-weight: bold;
+ color: #0067b7;
+ margin: 0px 0px 0px 0px;
+}
+
+#levy_sloupec div.hr {
+ clear:both;
+ background: url("img/rozdelovnik_posty.png") no-repeat bottom;
+ height: 53px;
+ width: 411px;
+ margin: 0px auto 0px auto;
+}
+
+#levy_sloupec div.dalsi-aktuality {
+ clear:both;
+ margin: 0px 0px 0px 25px; 
+ height: 27px;
+ padding: 23px 0px 0px 0px;   
+}
+
+#levy_sloupec div.novejsi-aktuality {
+
+ margin: 0px 0px 0px 25px; 
+ height: 27px;
+ padding: 23px 0px 0px 0px;   
+}
+
+#levy_sloupec div.predchozi-aktuality {
+ float: left;
+ margin: 0px 10px 0px 25px; 
+ height: 27px;
+ padding: 23px 0px 0px 0px;   
+}
+
+#levy_sloupec div.dalsi-aktuality a{
+ font-family: Georgia;
+ font-size: 15px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #3c89c4;
+ padding-right: 18px;
+ background: url("img/ikona_dalsi.png") no-repeat center right;    
+}
+
+#levy_sloupec div.novejsi-aktuality a{
+ font-family: Georgia;
+ font-size: 15px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #3c89c4;
+ padding-right: 18px;
+ background: url("img/ikona_dalsi.png") no-repeat center right;    
+}
+
+#levy_sloupec div.predchozi-aktuality a{
+ font-family: Georgia;
+ font-size: 15px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #3c89c4;
+ padding-left: 18px;
+ background: url("img/ikona_dalsi2.png") no-repeat center left;    
+}
+
+#levy_sloupec div.dalsi-aktuality a:hover{
+ text-decoration: underline;  
+}
+
+#levy_sloupec div.predchozi-aktuality a:hover{
+ text-decoration: underline;  
+}
+
+#levy_sloupec div.novejsi-aktuality a:hover{
+ text-decoration: underline;  
+}
+
+/* Stranka - pravy sloupec */
+
+#sidebar {
+ float:right; 
+ width: 352px;
+}
+
+#sidebar li div.widget-nahore {
+ background: url("img/backg_widget-nahore.png") no-repeat;
+ width: 305px;
+ height: 5px;
+ margin: 14px 0px 0px 20px; 
+}
+
+#sidebar li.widget div.widget-stred {
+ background: #ffffff;
+ margin: 0px 0px 0px 20px; 
+ width: 289px;
+ padding: 10px 8px 10px 8px; 
+}
+
+#sidebar li.widget h2{
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #3c89c4;
+ text-decoration: none;
+ margin: 0px 0px 15px 0px;
+}
+
+#sidebar li div.widget-dole {
+ background: url("img/backg_widget-dole.png") no-repeat;
+ width: 305px;
+ height: 5px;
+ margin: 0px 0px 0px 20px;
+ 
+}
+
+#stranka_konec {
+ clear:both;
+ background: url("img/backg_stranka-dole.png") repeat-y top left;
+ width: 954px;
+ height: 17px;
+}
+
+/* WIDGETY VPRAVO */
+
+/* Plugin + widget - PayPal Donations */
+
+#paypal_donations-3 p {
+ line-height:130%;
+}
+
+#paypal_donations-3 div.paypal-donations {
+ margin: 15px 0px 0px 63px;
+}	
+
+/* Widget (HTML) - Podporte nas */
+
+#text-2 div.widget-stred{
+ height: 320px;
+ padding: 0px 7px 0px 7px;
+}
+
+#text-2 ul{
+ float:left;
+ font-family: Verdana;
+ font-size: 13px;
+ line-height:130%;
+ list-style: none;
+}
+
+#text-2 ul li.ikona_bankovky{
+ background: url("img/ikona_bankovky.png") no-repeat 0px 17px;
+ padding: 10px 0px 10px 35px; 
+}
+
+#text-2 ul li.ikona_mince{
+ background: url("img/ikona_mince.png") no-repeat 0px 15px;
+ padding: 10px 0px 10px 35px;  
+}
+
+#text-2 ul li.ikona_darek{
+ background: url("img/ikona_darek.png") no-repeat 2px 11px;
+ padding: 10px 0px 10px 35px; 
+}
+
+#text-2 ul li.ikona_srdce{
+ float:left;
+ background: url("img/ikona_srdce.png") no-repeat 0px 14px;
+ padding: 10px 0px 10px 35px;  
+ margin: 0px 150px 0px 0px; 
+}
+
+#text-2 a.button_podporte{
+ float:left;
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: bold;
+ text-decoration: none;
+ text-align:center;
+ color: #ffffff;
+ text-shadow: 1px 1px #000000;
+ background: url("img/button_pomoc_aio.png") no-repeat 0px -2px;
+ padding: 11px 17px 21px 12px; 
+ margin: 20px 0px 0px 7px; 
+}
+
+#text-2 a.button_podporte:hover{
+ background: url("img/button_pomoc_aio.png") no-repeat 0px -64px;
+}
+
+#text-2 img{
+ float:right;
+ position:relative;
+ top: -32px;
+ margin-bottom: 10px;
+}
+
+/* Stranka - footer */
+
+#footer-horni{
+ background: url("img/backg_footer_nahore.png") no-repeat;
+ width: 954px;
+ height: 18px;
+}
+
+#footer-stred{
+ float:left;
+ background: url("img/backg_footer-stred.png") repeat-y;
+ width: 954px;
+ padding: 10px 25px 10px 25px;
+}
+
+#footer-dolni{
+ float:left;
+ background: url("img/backg_footer_dole.png") no-repeat;
+ width: 954px;
+ height: 18px;
+}
+
+#footer-stred div.footer-widget_1{
+ float:left;
+ background: url("img/rozdelovnik_footer.png") repeat-y scroll right top transparent;
+ height: 121px;
+ width:206px;
+}
+
+#footer-stred div.footer-widget_1 img{
+ position:relative;
+ top: 10px;
+ left: -2px;
+}
+
+#footer-stred div.footer-widget_2{
+ float:left;
+ background: url("img/rozdelovnik_footer.png") repeat-y scroll right top transparent;
+ height: 121px;
+ width:313px;
+ padding: 0px 0px 0px 22px;
+}
+
+#footer-stred div.footer-widget_3{
+ float:left;
+ padding: 0px 0px 0px 22px;
+}
+
+#footer-stred h2{
+ font-family: Verdana;
+ font-size: 18px;
+ font-weight: bold;
+ text-decoration: none;
+ color: #cbcbcb;
+ text-shadow: 1px 1px #000000;
+ margin: 0px 0px 19px 0px; 
+}
+
+#footer-stred p, table{
+ font-family: Verdana;
+ font-size: 13px;
+ font-weight: normal;
+ text-decoration: none;
+ color: #cbcbcb;
+ text-shadow: 1px 1px #000000;
+ line-height:130%;
+}
+
+#footer-stred table td.sirsi{
+ width:135px;
+}
+
+#footer-stred a{
+ color: #00a49e;
+}
+
+#footer-stred a:hover{
+ color: #1b81d0;
+}
+
+#footer-stred input.formularek {
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: bold;
+ background: url("img/superbutton.png") repeat-x scroll center -121px transparent;
+ border: 1px solid #2B2B2B;
+ border-radius: 4px 4px 4px 4px;
+ box-shadow: 0 1px 3px #0E0E0E inset;
+ color: #b0b0b0;
+ float: left;
+ height: 16px;
+ padding: 6px 10px;
+ text-align: left;
+ width: 50%;
+ margin: 15px 0px 0px 0px;
+}
+
+#footer-stred input.formularek:hover, #footer-stred input.formularek:focus {
+ background: url("img/button_all-in-one.png") repeat-x scroll center -151px transparent;
+ border: 1px solid #3A3A3A;
+}
+
+#footer input.cudlik {
+ font-family: Verdana;
+ font-size: 13px;
+ text-shadow: 1px 1px #000000;
+ background: url("img/button_all-in-one.png") repeat-x scroll center -61px #1E1E1E;
+ border: 1px solid #000000;
+ border-radius: 4px 4px 4px 4px;
+ box-shadow: 0 1px 1px #474747 inset;
+ color: #C6C6C6;
+ display: inline;
+ float: left;
+ height: 30px;
+ margin: 15px 0 3px 6px;
+ padding: 1px 15px 4px;
+ text-align: center;
+ width: auto;
+}
+
+#footer input.cudlik:hover {
+ background: url("img/button_all-in-one.png") repeat-x scroll center -91px #1E1E1E;
+}
+
+/* Stranka - copyright*/
+#footer-copyright{
+ text-align:center;
+ clear: both;
+ font-family: Verdana;
+ font-size: 50%;
+ color: #ffffff;
+ text-shadow: 1px 1px #5a5a5a;
+ margin: 0px 0px 12px 0px;
+ padding: 6px 0px 0px 0px;
+}
+
+#footer-copyright p{
+ font-size: 10px;
+}
+
+/* PLUGINY */
+
+/* Plugin EG-Attachments - v single dole */
+
+#prilohy_pod_clankem {
+ margin: 15px 0px 15px 0px;
+ font-family: Verdana;
+ font-size: 13px;
+ line-height:130%; 
+}
+
+#prilohy_pod_clankem dl.attachments {
+ margin: 5px 0px 0px 0px;
+ padding: 7px 7px 3px 5px;
+}
+
+#prilohy_pod_clankem dl.attachments-large,dl.attachments-medium,dl.attachments-small {
+ border: 1px dashed gray;
+}
+
+#prilohy_pod_clankem dl.attachments:after {
+ content:".";
+ display:block;
+ height:0;
+ clear:both;
+ visibility:hidden;}
+
+#prilohy_pod_clankem dl.attachments img{
+ margin: 1%;
+}
+
+#prilohy_pod_clankem dl.attachments dt.icon {
+ float: left;
+}
+
+#prilohy_pod_clankem dl.attachments dd {
+ width: 80%;
+}
+
+#prilohy_pod_clankem dl.attachments dd.caption {
+ float: left;
+ margin: 0;
+ padding: 0 0 0 0.5em;
+}
+
+#prilohy_pod_clankem dl.attachments dd img.lock {
+ margin: 0;
+ float: right;
+}
+
+#prilohy_pod_clankem div.widget dl.attachments {
+ width: 100%;
+}
+
+#prilohy_pod_clankem div.widget dl.attachments-large {
+ border: 0;
+}
+
+/* Plugin Smart YouTube PRO */
+
+#single_po_excerptu div.embedovane_video {	
+ margin: 30px 0px 30px 0px;
+ text-align: center; 
+} 
+
+/* --------------------------- IE 7 css hack -------------------------------- */
+
+*:first-child+html #menu ul li.menu-item_prvni {
+  padding-top: 1px;
+}
+
+*:first-child+html #menu ul li.cat-item {
+  padding-top: 1px;
+}
+
+*:first-child+html #menu ul li.menu-item_posledni {
+  padding-top: 1px;
+  background: none;
+}
+
+*:first-child+html #menu ul li.current-menu_prvni {
+  padding-top: 4px;
+  background: url("img/current-menu_prvni.png") no-repeat 0px 0px;
+  background-color: #5da6ca;
+}
+
+*:first-child+html #menu ul li.current-menu {
+  padding-top: 4px;
+}
+
+*:first-child+html #menu ul li.current-menu_posledni {
+  padding-right: 18px;
+  padding-top: 4px;
+  top: -3px;
+}
+
+*:first-child+html #submenu ul {
+  top: -3px;
+}
+
+*:first-child+html #header ul li.stranka_prvni {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right 1px;
+}
+
+*:first-child+html #header ul li.page_item {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right 1px;
+}
+
+*:first-child+html #header ul li.stranka_posledni {
+background: none;
+}
+
+*:first-child+html #searchform {
+ clear:right;
+ margin: 10px 7px 0 0;
+}
+
+*:first-child+html #searchform #searchbutton {
+ cursor: pointer;
+ width:46px;
+ height:28px;
+ text-indent: 0px;
+ background: none;
+ border: none;	
+}
+
+
+*:first-child+html #searchform div {
+ margin: 2px 0px 0px 0px;
+ float:right;
+ background: url("img/form_hledat.png") no-repeat scroll right 0 transparent;	
+}
+
+*:first-child+html #searchform #searchwindow {
+ background: none repeat scroll 0 0 transparent;
+ border: 0 none;
+ width:173px;
+ margin: 0px 0px 0px 0px;
+ padding: 0px 0px 0px 0px;
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: bold;
+ color: #b0b0b0;
+ position: relative;
+ left: 6px;
+ top: -7px;
+}
+
+/*  *:first-child+html #sidebar li.widget-dole {
+ margin-top: -17px; 
+} */
+
+/* --------------------------- IE 8 css hack -------------------------------- */
+
+@media \0screen {
+	
+ #menu ul li.menu-item_prvni {
+  padding-top: 2px;
+ }
+
+ #menu ul li.cat-item {
+  padding-top: 2px;
+ }
+
+ #menu ul li.menu-item_posledni {
+  padding-top: 2px;
+  background: none;
+ }
+
+ #menu ul li.current-menu_prvni {
+  padding-top: 5px;
+  background: url("img/current-menu_prvni.png") no-repeat 0px 0px;
+  background-color: #5da6ca;
+ }
+
+ #menu ul li.current-menu {
+  padding-top: 5px;
+ }
+
+ #menu ul li.current-menu_posledni {
+  padding-right: 18px;
+  padding-top: 5px;
+  top: -3px;
+ }
+
+ #submenu ul {
+  top: -1px;
+ }
+
+ #searchform #searchwindow {
+  top: 1px;
+ }
+
+ #header ul li.stranka_prvni {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px;
+ }
+
+ #header ul li.page_item {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px;
+ }
+ 
+ #header ul li.stranka_posledni {
+  background: none;
+ } 
+
+ #submenu ul li.menu-item_prvni {
+  background: url("img/rozdelovnik_submenu.png") no-repeat right 0px;
+ }
+
+ #submenu ul li.cat-item {
+  background: url("img/rozdelovnik_submenu.png") no-repeat right 0px;
+ }
+ 
+}
+
+/* --------------------------- IE 9 css hack -------------------------------- */
+
+:root #menu ul li.menu-item_prvni {
+  padding-top: 1px\9;
+}
+
+:root #menu ul li.cat-item {
+  padding-top: 1px\9;
+}
+
+:root #menu ul li.menu-item_posledni {
+  padding-top: 1px\9;
+  background: none 0px\9;
+}
+
+:root #menu ul li.current-menu_prvni {
+  padding-top: 4px\9;
+  background: url("img/current-menu_prvni.png") no-repeat 0px 0px\9;
+  background-color: #5da6ca\9;
+}
+
+:root #menu ul li.current-menu {
+  padding-top: 4px\9;
+}
+
+:root #menu ul li.current-menu_posledni {
+  padding-right: 17px\9;
+  padding-top: 4px\9;
+  top: -3px\9;
+}
+
+:root #submenu ul {
+  top: 0px\9;
+}
+
+:root #searchform #searchwindow {
+  top: 1px\9;
+}
+
+:root #header ul li.stranka_prvni {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px\9;
+}
+
+:root #header ul li.page_item {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px\9;
+}
+
+:root #header ul li.stranka_posledni {
+  background: none 0px\9;
+ } 
+
+:root #submenu ul li.menu-item_prvni {
+  background: url("img/rozdelovnik_submenu.png") no-repeat right 0px\9;
+}
+
+:root #submenu ul li.cat-item {
+  background: url("img/rozdelovnik_submenu.png") no-repeat right 0px\9;
+}
+
+
+/* --------------------------- Chrome css hack ------------------------------ */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	
+ #menu ul li.menu-item_prvni {
+  padding-top: 1px;
+ } 
+
+ #menu ul li.cat-item {
+  padding-top: 1px;
+ }
+
+ #menu ul li.menu-item_posledni {
+  padding-top: 1px;
+  background: none;
+ }
+
+ #menu ul li.current-menu_prvni {
+  padding-top: 4px;
+ }
+
+ #menu ul li.current-menu {
+  padding-top: 4px;
+ }
+
+ #menu ul li.current-menu_posledni {
+  padding-right: 18px;
+  padding-top: 4px;
+  top: -3px;
+ }
+
+ #submenu ul {
+  top: -1px;
+ }
+
+ #searchform #searchwindow {
+  top: 0px;
+ }
+
+ #header ul li.stranka_prvni {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px;
+ } 
+
+ #header ul li.page_item {
+  background: url("img/rozdelovnik_stranky.png") no-repeat right -2px;
+ }
+ 
+ #header ul li.stranka_posledni {
+  background: none;
+ } 
+ 
+ #text-2 img{
+  top: -25px;
+ } 
+ 
+}
+
+
+
